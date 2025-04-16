@@ -7,14 +7,14 @@
 body{
     height: 100vh;
     text-align: center;
-    background-color: rgb(226, 208, 208);
+    background-color: rgb(28, 28, 29);
     /* padding: 1rem; */
 }
 .header-content{
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 auto;
     align-items: center;
     padding: 1rem;
@@ -22,8 +22,41 @@ body{
 .logo{
     height: 60px;
     width: 170px;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 .nav-link{
-    margin-top: 30px;
+    margin-top: auto;
+    /* justify-content: space-around; */
+    padding: 8px;
+    color: bisque;
+    font-weight: 550;
+    transition: all 0.1s linear 0.1s; 
+}
+.nav-link:hover{
+    color: rgb(164, 255, 195);
+}
+@media  screen and (max-width:768px) {
+    .nav-link{
+        display: none;
+    }
+}
+.contact-button{
+    padding: 9px;
+    background-color: rgb(255, 228, 196);
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    border-radius: 5%;
+    transition: all 0.1s linear 0.1s; 
+}
+.contact-button:hover{
+    padding: 9px;
+    background-color: rgb(59, 59, 59);
+    color: rgb(255, 231, 231);
+    font-weight: 550;
+    border-radius: 5%;
+}
+@media  screen and (max-width:768px) {
+    .contact-button{
+        display: none;
+    }
 }
