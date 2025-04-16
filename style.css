@@ -11,17 +11,19 @@ body{
     /* padding: 1rem; */
 }
 .header{
+    max-width: 2100px;
     margin-top: 10px;
-    margin-left: 70px;
+    margin-left: 100px;
 }
 .header-content{
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 2000px;
+    /* margin: 0 auto; */
     display: flex;
     justify-content: space-around;
     padding: 0 auto;
     align-items: center;
     padding: 1rem;
+    /* margin-left: 100px; */
 }
 .logo{
     height: 60px;
@@ -35,6 +37,7 @@ body{
     color: bisque;
     font-weight: 550;
     transition: all 0.1s linear 0.1s; 
+    font-size: 1.15rem;
 }
 .nav-link:hover{
     color: rgb(164, 255, 195);
@@ -46,6 +49,7 @@ body{
 }
 .contact-button{
     padding: 9px;
+    margin-left: 160px;
     background-color: rgb(255, 228, 196);
     color: rgb(0, 0, 0);
     font-weight: 550;
@@ -75,4 +79,152 @@ body{
     .menu{
         display: none;
     }
+}
+.main-section{
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    align-items: center;
+    margin: 0 auto;
+}
+.content-left{
+    text-align: center;
+    animation: slidefromleft 1s ease forwards;
+    opacity: 0;
+}
+@keyframes slidefromleft {
+
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+.section-label{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.section-title{
+    font-size: 2.5rem;
+    color: rgb(255, 228, 196);
+    font-family: 'Times New Roman';
+    padding: 0.9rem;
+}
+.section-description{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.button-groups{
+    display: flex;
+    gap: 1.7rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.explore-button,
+.discover-button{
+    padding: 9px;
+    /* background-color: rgb(255, 228, 196);
+    color: rgb(0, 0, 0); */
+    font-weight: 550;
+    border-radius: 5%;
+    transition: all 0.1s linear 0.1s;
+    margin-top: 1rem;
+}
+.explore-button{
+    background-color: rgb(202, 202, 202);
+    color: rgb(0, 0, 0);
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.discover-button{
+    background-color: rgb(255, 184, 184);
+    color: rgb(0, 0, 0);
+}
+.explore-button:hover{
+    background-color: rgb(178, 231, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    border-radius: 5%;
+}
+.discover-button:hover{
+    background-color: rgb(238, 255, 178);
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    border-radius: 5%;
+}
+.content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+    width: 370px;
+    background-color: rgb(155, 155, 155);
+    /* box-shadow: 0px 4px 8px rgb(155, 155, 155) */
+}
+.image-container{
+    border-radius: 1.25rem;
+    height: 525px;
+    width: 370px;
+    overflow: hidden;
+    box-shadow: 7px 7px 8px rgb(255, 228, 196);
+}
+.section-image{
+    height: 100%;
+    width: 100%;
+}
+@media  screen and (min-width:768px) {
+    .main-section{
+        flex-direction: row;
+    }
+    .content-left{
+        max-width: 50%;
+        text-align: left;
+    }
+    .section-title{
+        padding-left: 0%;
+        font-size: 3rem;
+        max-width: 95%;
+    }
+    .button-groups{
+        justify-content: start;
+        padding-left: 0%;
+
+    }
+    .section-label{
+        font-size: 1.2rem;
+    }
+    .section-description{
+        font-size: 1rem;
+        max-width: 70%;
+        font-weight: 300;
+    }
+    .content-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        width: 73vh;
+        background-color: rgb(155, 155, 155);
+    }
+    .image-container{
+        height: 85vh;
+        width: 73vh;
+        overflow: hidden;
+
+    }
+    .section-image{
+        height: 100%;
+        width: 100%;
+    }
+
 }
