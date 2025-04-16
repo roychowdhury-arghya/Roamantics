@@ -168,7 +168,6 @@ body{
     justify-content: center;
     height: 480px;
     width: 370px;
-    background-color: rgb(155, 155, 155);
     /* box-shadow: 0px 4px 8px rgb(155, 155, 155) */
 }
 .image-container{
@@ -176,7 +175,7 @@ body{
     height: 525px;
     width: 370px;
     overflow: hidden;
-    box-shadow: 7px 7px 8px rgb(255, 228, 196);
+    /* box-shadow: 7px 7px 8px rgb(255, 228, 196); */
 }
 .section-image{
     height: 100%;
