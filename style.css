@@ -10,8 +10,12 @@ body{
     background-color: rgb(28, 28, 29);
     /* padding: 1rem; */
 }
+.header{
+    margin-top: 10px;
+    margin-left: 70px;
+}
 .header-content{
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -57,6 +61,18 @@ body{
 }
 @media  screen and (max-width:768px) {
     .contact-button{
+        display: none;
+    }
+}
+.menu{
+    border: none;
+    background-color:rgb(28, 28, 29) ;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 5%;
+}
+@media  screen and (min-width:768px) {
+    .menu{
         display: none;
     }
 }
