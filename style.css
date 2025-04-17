@@ -248,6 +248,7 @@ body{
     align-items: center;
     margin-top: 2rem;
     animation: slidefromleft 2s ease forwards;
+    height: 8rem;
 }
 .p{
    color: rgb(255, 228, 196); 
@@ -424,4 +425,9 @@ body{
 }
 .feature-card:nth-child(6){
     background-color: rgb(94, 55, 168);
+}
+@media  screen and (max-width:768px){
+    .feature-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
