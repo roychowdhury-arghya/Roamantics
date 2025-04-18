@@ -43,7 +43,7 @@ body{
     font-size: 1.15rem;
 }
 .nav-link:hover{
-    color: rgb(164, 255, 195);
+    color: rgb(255, 0, 234);
 }
 @media  screen and (max-width:768px) {
     .nav-link{
@@ -529,12 +529,13 @@ body{
     margin-bottom: 9px;
 }
 .avatar-prof{
-    color: rgb(70, 22, 0);
+    text-decoration: underline;
+    color:rgb(100, 5, 5);
     padding: 8px;
     font-family: Tahoma;
     background-color: rgb(241, 176, 139);
-    border-radius: 20%;
-    font-weight: bolder;
+    border-radius: 4%;
+    font-weight: 3rem;
 }
 @media  screen and (max-width:768px){
     .testimonial-grid{
@@ -562,7 +563,7 @@ body{
     margin-top: 1.8rem;
     padding: 2rem;
     max-width: 1060px;
-    max-height: 700px;
+    max-height: 10000px;
     margin: 0 auto;;
     border-radius: 3%;
     border: 5px white;
@@ -578,9 +579,32 @@ body{
 .news-left{
     height: 300px;
     width: 50%;
+    display: block;
     border: 1.5px solid rgb(102, 102, 102);
     box-shadow: 2px 2px 10px black;
     border-radius: 3%;
+}
+@media screen and (max-width:640px) {
+    .news-left{
+        display: none;
+    }
+    .newsletter-content{
+        display: flex;
+        justify-content: center;
+    }
+    .news-right{
+        margin: 0 auto;
+        min-width: 80%;
+    }
+}
+@media screen and (max-width:450px) {
+    .news-right{
+        margin: 0 auto;
+        min-width: 100%;
+    }
+    .newsletter-content{
+        padding: 2%;
+    }
 }
 .news-left img{
     height: 100%;
@@ -600,12 +624,10 @@ body{
     justify-content: center;
     gap: 1.5rem;
 }
-.news-info{
-
-}
 .news-heading{
-    align-items: start;
-    font-size: 2.6rem;
+    align-items: flex-start;
+    /* font-size: 2.6rem; */
+    font-size: 1.4rem;
 }
 .news-details{
     font-size: 0.85rem;
@@ -618,21 +640,32 @@ body{
     font-size: 1.1rem;
     margin: 0 auto;;
 }
+.news-email:focus{
+    /* padding-left: 0.65rem;
+    padding-right: 0.65rem;
+    padding-top: 0.30rem;
+    padding-bottom: 0.30rem; */
+    /* font-size: 1.1rem;
+    margin: 0 auto;; */
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+}
 .news-send{
     padding-left: 0.65rem;
     padding-right: 0.65rem;
     padding-top: 0.30rem;
     padding-bottom: 0.30rem;
     font-size: 1.1rem;
-}
-.news-form{
-
+    background-color: rgb(77, 63, 116);
+    color: white;
 }
 .privacy-policy{
     font-size: 0.885rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    color: rgb(0, 0, 0);
 }
 .news-link{
-
+    text-decoration: underline;
+    color:rgb(38, 0, 255);
 }
