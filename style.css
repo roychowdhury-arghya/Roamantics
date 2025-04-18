@@ -120,7 +120,7 @@ body{
 .section-label{
     font-size: 0.9rem;
     font-weight: 400;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 131, 131);
 }
 .section-title{
     font-size: 2.5rem;
@@ -132,7 +132,7 @@ body{
     font-size: 1.5rem;
     font-weight: 200;
     color: rgb(255, 255, 255);
-    font-family: Haettenschweiler;
+    font-family: sans-serif;
 }
 .button-groups{
     display: flex;
