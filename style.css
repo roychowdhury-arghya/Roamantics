@@ -255,7 +255,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    animation: slidefromleft 2s ease forwards;
+    animation: slidefromleft 4s ease forwards;
     height: 8rem;
 }
 .p{
