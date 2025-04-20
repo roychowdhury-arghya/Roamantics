@@ -1,1 +1,1 @@
-Making a StudySync Project.
+Making a imaginary Travel agency Project.
